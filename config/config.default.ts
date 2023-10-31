@@ -49,10 +49,3 @@ export default (appInfo: EggAppConfig) => {
 
   return config;
 };
-exports.sequelize = {
-  "username": "root",
-  "password": null,
-  "database": "node",
-  "host": "127.0.0.1",
-  "dialect": "mysql"
-};
