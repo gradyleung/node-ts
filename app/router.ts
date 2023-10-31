@@ -8,4 +8,6 @@ export default (app: Application) => {
   router.get('/news/all', controller.news.all);
   router.get('/news/item/:id', controller.news.detail);
   router.get('/news/user/:id', controller.news.user);
+  
+  router.resources('users', '/users', controller.users);
 };

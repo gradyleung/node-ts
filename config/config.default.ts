@@ -38,5 +38,21 @@ export default (appInfo: EggAppConfig) => {
     '/favicon.ico': fs.readFileSync(path.join(appInfo.baseDir, 'app/public/favicon.png')),
   };
 
+  // config.sequelize = {
+  //   dialect: 'mysql',
+  //   host: 'localhost',
+  //   port: 3306,
+  //   database: 'node',
+  //   username: 'root',
+  //   password: ''
+  // };
+
   return config;
+};
+exports.sequelize = {
+  "username": "root",
+  "password": null,
+  "database": "node",
+  "host": "127.0.0.1",
+  "dialect": "mysql"
 };

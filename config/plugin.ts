@@ -3,4 +3,12 @@ export default {
     enable: true,
     package: 'egg-view-nunjucks',
   },
+  sequelize: {
+    enable: true,
+    package: 'egg-sequelize',
+  }
 };
+// exports.sequelize = {
+//   enable: true,
+//   package: 'egg-sequelize',
+// };
