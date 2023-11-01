@@ -5,9 +5,9 @@ export default (app: Application) => {
 
   router.redirect('/', '/news');
   router.get('/news', controller.news.list);
-  router.get('/news/all', controller.news.all);
   router.get('/news/item/:id', controller.news.detail);
   router.get('/news/user/:id', controller.news.user);
+  router.get('/user', controller.user.index);
 
-  router.resources('user', '/user', controller.user);
+  // router.resources('user', '/user', controller.user);
 };

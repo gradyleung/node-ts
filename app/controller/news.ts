@@ -28,17 +28,4 @@ export default class NewsController extends Controller {
     const userInfo = await ctx.service.news.getUser(id);
     await ctx.render('news/user.tpl', { user: userInfo });
   }
-
-  public async all(){
-    const { ctx } = this;
-    ctx.body = { result: 'all' };
-    // const { ctx } = this;
-    // const page = parseInt(ctx.query.page, 10) || 1;
-
-    // const idList = await ctx.service.news.getTopStories(page);
-
-    // // get itemInfo parallel
-    // return await Promise.all(idList.map(id => ctx.service.news.getItem(id)));
-
-  }
 }

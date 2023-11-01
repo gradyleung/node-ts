@@ -1,9 +1,6 @@
 'use strict';
 
 module.exports = app => {
-
-  console.log('model');
-  console.log(app);
   const { STRING, INTEGER, DATE } = app.Sequelize;
 
   const User = app.model.define('user', {
